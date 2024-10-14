@@ -5,11 +5,13 @@ body {
     color: #1b1b1b;
 }
 
+
 p {
     font-family: "Source Sans 3", sans-serif;
     font-weight: 700;
     color: #1b1b1b;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display SC", serif;
@@ -19,7 +21,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #1b1b1b;
 }
 
-header {
+
+.heading {
     font-family: "Playfair Display SC", serif;
     font-weight: 800;
     font-size: 52px;
@@ -34,10 +37,11 @@ header {
     position: sticky;
 }
 
+
 .hero {
     position: relative;
     overflow: hidden;
-    height: 600px;
+    height: 800px;
 }
 .hero-images {
     position: absolute;
@@ -62,6 +66,7 @@ header {
     z-index: 2;
 }
 
+
 .showcase-box {
     display: flex;
     width: 100%;
@@ -69,12 +74,11 @@ header {
 .showcase {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
     overflow-y: auto;
+    gap: 5px;
     padding: 10px;
     width: 100%;
-    left: 0;
-    max-height: 100vh;
+    max-height: 800px;
 
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -87,6 +91,7 @@ header {
     height: auto;
     display: block;
 }
+
 
 .tabs-box {
     width: 100%;
@@ -114,6 +119,8 @@ header {
     overflow-y: auto;
     width: auto;
     background-color: #e6e6cf;
+    text-align: center;
+    height: 760px;
 }
 .tab-item {
     display: none;
@@ -123,7 +130,9 @@ header {
     padding: 10px;
     margin-top: 10px;
 }
-.socials {
-    text-align: center;
-    justify-content: center;
+
+@media (max-width: 768px) {
+    body {
+        background-color: black;
+    }
 }

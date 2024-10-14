@@ -6,6 +6,7 @@
   <title>Porject 2</title>
   <meta name="description" content="This site will serve as the hub for many sub responsive layouts">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="img/x-icon" href="img/LogoBackground.png">
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -23,7 +24,7 @@
 </head>
 
 <body>
-  <div class="header">
+  <div class="heading">
     <header>MITZIMBERG</header>
   </div>
   
@@ -38,7 +39,7 @@
         <p>Your descriptive text goes here.</p>
     </div>
   </div>
-
+<br>
   <div class="showcase-box">
     <div class="showcase">
       <img src="img/Image1.jpg" alt="Artwork of a parrot">
@@ -66,7 +67,7 @@
           <button class="tab active" onclick="showTab('tab1')">Commission</button>
           <button class="tab" onclick="showTab('tab2')">About Art</button>
           <button class="tab" onclick="showTab('tab3')">About Me</button>
-          <button class="tab" onclick="showTab('tab4')">Socials</button>
+          <button class="tab" onclick="showTab('tab4')">Extras</button>
       </div>
       <div class="tab-content">
           <div id="tab1" class="tab-item active">
@@ -117,24 +118,33 @@
                   </label>
                   <label for="options-3">
                     <input type="radio" id="options-3"
-                          name="options">Mixed Media
+                          name="options">Marker
                     </input>
                   </label>
+                  <label for="options-4">
+                    <input type="radio" id="options-4"
+                          name="options">Mixed Media
+                      </input>
+                </label>
                 </div>
                 <br>
                 <div class="form-control">
-                  <label for="comment">
-                        Description
-                  </label>
+                  <label for="comment">Describe your Commission</label>
                   <br>
-                  <textarea name="comment" id="comment" rows="6" columns="6"
-                      placeholder="Describe your Commission here">
+                  <textarea name="comment" id="comment" rows="6"
+                      placeholder="Describe your Commission here"style="height: 250px; width: 450px">
                   </textarea>
                 </div>
+                <button>Submit</button>
           </div>
         <div id="tab2" class="tab-item">
           <div class="about-art">
             <p>From Highschool I've full-sent art. Bouncing between many mediums and even now I'm still
+              fighting to find a passion I'm interested in. I've gone between things as simple as painting
+              and as complex as sculpture & installations. A lot of my best artworks come from Highschool
+              where I mostly dabbled with pencil and mixed-media and even logos/posters. Upon getting to 
+              college my artwork began to branch significantly where I am now painting, sculpting, and more. 
+              From Highschool I've full-sent art. Bouncing between many mediums and even now I'm still
               fighting to find a passion I'm interested in. I've gone between things as simple as painting
               and as complex as sculpture & installations. A lot of my best artworks come from Highschool
               where I mostly dabbled with pencil and mixed-media and even logos/posters. Upon getting to 
@@ -145,23 +155,22 @@
           <div class="about-me">
             <p>Right now I'm an art major at LSU, but I wasn't that at first. Originally in my Freshman year I was a Graphic Design major 
               as I had found a passion for Graphic Design in Highschool. Unfortunately whenever I had vehicle problems in my Sophomore year I had to drop my Graphic Design major 
+              because they could not offer Online Courses, so I inevitably had to switch. My favorite color is red. 
+              Right now I'm an art major at LSU, but I wasn't that at first. Originally in my Freshman year I was a Graphic Design major 
+              as I had found a passion for Graphic Design in Highschool. Unfortunately whenever I had vehicle problems in my Sophomore year I had to drop my Graphic Design major 
               because they could not offer Online Courses, so I inevitably had to switch. My favorite color is red</p>
           </div>
         </div>
         <div id="tab4" class="tab-item">
-            <div class="socials">
-              <div class=links>
-                <ul>
-                  <p><a href="https://www.instagram.com/b.mitzimberg/" target="_blank">Instagram</a></p>
-                  <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Twitter</a></p>
-                  <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">YouTube</a></p>
-                  <p><a href="https://github.com/Mitzimberg" target="_blank">GitHub</a></p>
-                </ul>
+            <div class="extras">
+              <div class=extra-info>
+                <p>Extra Info</p>
               </div>
             </div>
         </div>
     </div> 
   </div>
+
   <script src="js/main.js"></script>
 </body>
 
