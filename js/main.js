@@ -8,7 +8,7 @@ function cycleImages() {
     images[currentIndex].classList.add('active');
 }
 
-setInterval(cycleImages, 6000); // Change image every 3 seconds
+setInterval(cycleImages, 6000);
 
 //tabs
 function showTab(tabId) {
