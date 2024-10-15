@@ -1,3 +1,4 @@
+//hero section switch
 const images = document.querySelectorAll('.hero-images img');
 let currentIndex = 0;
 
@@ -9,6 +10,7 @@ function cycleImages() {
 
 setInterval(cycleImages, 6000); // Change image every 3 seconds
 
+//tabs
 function showTab(tabId) {
     // I've got no real idea what any of this means, all of this was jacked
     const tabItems = document.querySelectorAll('.tab-item');
@@ -16,7 +18,6 @@ function showTab(tabId) {
         item.classList.remove('active');
     });
 
-    // Remove active class from all tabs
     const tabs = document.querySelectorAll('.tab');
     tabs.forEach(tab => {
         tab.classList.remove('active');
@@ -27,3 +28,17 @@ function showTab(tabId) {
 }
 
 showTab('tab1');
+
+//popup
+document.getElementById('my-form').onsubmit = function(event) {
+    event.preventDefault();
+    showPopup();
+};
+
+function showPopup() {
+    document.getElementById('popup').style.display = 'flex';
+}
+
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+}
